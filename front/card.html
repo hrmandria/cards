@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Configuration de Cartes</title>
+    <link rel="stylesheet" href="./card.css">
+</head>
+
+<body>
+    <h1>Configuration de Cartes</h1>
+    <form id="cardConfigForm">
+        <label for="message">Message sur la carte :</label>
+        <input type="text" id="message" name="message" required>
+        <label for="surpriseText">Texte à gratter :</label>
+        <input type="text" id="surpriseText" name="surpriseText" required>
+        <button id="saveImage">Sauvegarder l'Image</button>
+    </form>
+    <div id="cardDisplay">
+        <div id="imageContainer">
+            <img id="cardImage" src="./images/img.jpg" alt="Image de fond">
+            <p id="userMessage">Ici votre message</p>
+            <p id="scratchText">Texte à gratter</p>
+        </div>
+    </div>
+    <canvas id="cardCanvas" width="800" height="600"></canvas>
+    <script src="card.js"></script>
+</body>
+
+</html>
